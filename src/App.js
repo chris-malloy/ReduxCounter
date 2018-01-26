@@ -16,11 +16,11 @@ class App extends Component {
     }
 
     addHandler(){
-        const number = this.props.number
+        const number = this.props.number;
         this.props.add(number);
     };
     subtractHandler(){
-        const number = this.props.number
+        const number = this.props.number;
         this.props.subtract(number);
     };
     render() {
