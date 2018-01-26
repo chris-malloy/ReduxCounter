@@ -1,4 +1,5 @@
 export default function(state = 0, action){
+    // return 0
     switch(action.type) {
         case 'INCREMENT_NUMBER':
             return state = action.payload;
