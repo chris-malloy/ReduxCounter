@@ -7,8 +7,6 @@ import SubtractNumber from './actions/SubstractNumber';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 
-
-
 class App extends Component {
     constructor(){
         super();
@@ -51,15 +49,16 @@ class App extends Component {
 }
 
 function mapStateToProps(state){
-return {
-    number: state.changeNumber
-}
+    return {
+        number: state.changeNumber
+    }
 }
 
 function mapDispatchToProps(dispatch){
-return bindActionCreators({
-    add: AddNumber,
-    subtract: SubtractNumber
-},dispatch)
+    return bindActionCreators({
+        add: AddNumber,
+        subtract: SubtractNumber
+    },dispatch)
 }
+
 export default connect(mapStateToProps,mapDispatchToProps)(App);
